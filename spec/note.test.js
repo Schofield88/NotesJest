@@ -1,8 +1,8 @@
-const noteModel = require('../src/noteModel');
+const Note = require('../src/note');
 
-describe('noteModel', () => {
+describe('Note', () => {
   it("Returns 'My favourite language is JavaScript' for read method", () => {
-    const note = new noteModel('My favourite language is JavaScript');
+    const note = new Note('My favourite language is JavaScript');
     expect(note.read()).toBe('My favourite language is JavaScript');
   });
 });

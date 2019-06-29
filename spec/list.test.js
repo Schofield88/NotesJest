@@ -1,6 +1,6 @@
 const List = require('../src/list');
 
-const mockNote = jest.fn();
+const mockNote = jest.fn().mockName('Note');
 
 describe('List', () => {
   const list = new List(mockNote);

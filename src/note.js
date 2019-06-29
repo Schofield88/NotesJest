@@ -1,11 +1,13 @@
-class Note {
-  constructor(note) {
-    this.text = note;
+function Note(note) {
+  const text = note;
+
+  function read() {
+    return text;
   }
 
-  read() {
-    return this.text;
-  }
+  return Object.freeze({
+    read,
+  });
 }
 
 module.exports = Note;

@@ -7,7 +7,8 @@ describe('List', () => {
     expect(list.notes()).toEqual([]);
   });
 
-  it('adds a new note', () => {
+  pending('adds a new note', () => {
+    list.new('New note');
     expect().toBe();
   });
 });

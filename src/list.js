@@ -1,12 +1,20 @@
-class List {
-  constructor() {
-    this.notesArray = [];
+function List(note) {
+  const notesArray = [];
+  const NoteModel = note;
+
+  function notes() {
+    return notesArray;
   }
 
-  notes() {
-    return this.notesArray;
+  function create(text) {
+    const newNote = new NoteModel(text);
+    notesArray.push(newNote);
   }
+
+  return Object.freeze({
+    notes,
+    create,
+  });
 }
-
 
 module.exports = List;

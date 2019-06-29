@@ -1,14 +1,16 @@
 const List = require('../src/list');
 
+const mockNote = jest.fn();
+
 describe('List', () => {
-  const list = new List();
+  const list = new List(mockNote);
 
   it('returns the array of notes', () => {
     expect(list.notes()).toEqual([]);
   });
 
-  pending('adds a new note', () => {
-    list.new('New note');
-    expect().toBe();
+  it('adds a new note', () => {
+    list.create('New note');
+    expect(mockNote.mock.calls[0][0]).toBe('New note');
   });
 });

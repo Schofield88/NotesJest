@@ -4,7 +4,7 @@
   "description": "Notes app from Makers, using Jest",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll --coverage"
   },
   "author": "Luke Phyall",
   "license": "ISC",

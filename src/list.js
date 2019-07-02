@@ -1,6 +1,6 @@
-function List(note) {
+function List(noteModel) {
   const notesArray = [];
-  const NoteModel = note;
+  const NoteModel = noteModel;
 
   function notes() {
     return notesArray;

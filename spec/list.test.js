@@ -2,6 +2,7 @@ const List = require('../src/list');
 
 const mockNote = jest.fn().mockName('Note');
 
+
 describe('List', () => {
   const list = new List(mockNote);
 
@@ -11,6 +12,6 @@ describe('List', () => {
 
   it('adds a new note', () => {
     list.create('New note');
-    expect(mockNote.mock.calls[0][0]).toBe('New note');
+    expect(mockNote).toHaveBeenCalledWith('New note');
   });
 });

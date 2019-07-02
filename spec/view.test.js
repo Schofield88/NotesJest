@@ -4,7 +4,7 @@ describe('View', () => {
   const listMock = {
     notes: () => ['Some text', 'Some more text', 'Yet even more text'],
   };
-  const emptyListMock = { notes: () => [''] };
+  const emptyListMock = { notes: () => [] };
   const view = new View(listMock);
   const anotherView = new View(emptyListMock);
 
